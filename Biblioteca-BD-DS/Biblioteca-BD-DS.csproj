@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53D61BF8-A816-490F-8234-7790637AC89B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Biblioteca_BD_DS</RootNamespace>
+    <AssemblyName>Biblioteca-BD-DS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterar.Designer.cs">
+      <DependentUpon>FormAlterar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarAutor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarAutor.Designer.cs">
+      <DependentUpon>FormAlterarAutor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarEditora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarEditora.Designer.cs">
+      <DependentUpon>FormAlterarEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarGenero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarGenero.Designer.cs">
+      <DependentUpon>FormAlterarGenero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarLivro.Designer.cs">
+      <DependentUpon>FormAlterarLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAlterarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAlterarUsuario.Designer.cs">
+      <DependentUpon>FormAlterarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastro.Designer.cs">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrodeLivro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrodeLivro.Designer.cs">
+      <DependentUpon>FormCadastrodeLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCobrança.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCobrança.Designer.cs">
+      <DependentUpon>FormCobrança.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaGeral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaGeral.Designer.cs">
+      <DependentUpon>FormConsultaGeral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDevolução.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevolução.Designer.cs">
+      <DependentUpon>FormDevolução.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmpréstimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmpréstimo.Designer.cs">
+      <DependentUpon>FormEmpréstimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIni.Designer.cs">
+      <DependentUpon>FormIni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterar.resx">
+      <DependentUpon>FormAlterar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarAutor.resx">
+      <DependentUpon>FormAlterarAutor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarEditora.resx">
+      <DependentUpon>FormAlterarEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarGenero.resx">
+      <DependentUpon>FormAlterarGenero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarLivro.resx">
+      <DependentUpon>FormAlterarLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAlterarUsuario.resx">
+      <DependentUpon>FormAlterarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastro.resx">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrodeLivro.resx">
+      <DependentUpon>FormCadastrodeLivro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaGeral.resx">
+      <DependentUpon>FormConsultaGeral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevolução.resx">
+      <DependentUpon>FormDevolução.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmpréstimo.resx">
+      <DependentUpon>FormEmpréstimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIni.resx">
+      <DependentUpon>FormIni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
